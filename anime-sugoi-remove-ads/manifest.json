@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Anime-Sugoi Remove ADS",
+    "version": "0.0.0.1",
+    "description": "Chrome extension for remove any ads on Anime-Sugoi",
+    "author": "Kinkando",
+    "icons": {
+        "128": "icons/otaku-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.anime-sugoi.com/*"],
+            "js": ["script.js"],
+            "css": ["style.css"]
+        }
+    ]
+}

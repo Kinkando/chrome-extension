@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube ADS Auto Skip",
+    "version": "0.0.0.4",
+    "description": "Chrome extension for auto skip any ads video on YouTube",
+    "author": "Kinkando",
+    "icons": {
+        "16": "assets/icons/youtube16.png",
+        "24": "assets/icons/youtube24.png",
+        "32": "assets/icons/youtube32.png",
+        "64": "assets/icons/youtube64.png",
+        "128": "assets/icons/youtube128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["script.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
